@@ -1,27 +1,8 @@
 Różnice konserwacyjne w zależności od rodzaju bazy danych
----------------------------------------------------------
-
-MySQL
-~~~~~
-
-MySQL jest obecnie jedną z najpopularniejszych relacyjnych baz danych, szeroko stosowana w aplikacjach webowych.
-
-1. Fizyczna konserwacja:
-
-	- Wymaga monitorowania plików .ibd (w przypadku silknika InnoDB), które mogą znacznie rosnąć,
-
-	- Backup danych realizowany poprzez mysqldump lub system replikacji binlogów.
-
-2. Programowa konserwacja:
-
-	- Regularne sprawdzanie indeksów (ANALYZE TABLE, OPTIMIZE TABLE),
-
-	- Używanie narzędzi typu mysqlcheck do weryfikacji i naprawy tabel,
-
-	- Konfiguracja pliku my.cnf w celu dostosowania do wymagań aplikacji.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 PostgreSQL
-~~~~~~~~~~
+^^^^^^^^^^
 
 PostgreSQL to zaawansowany system RDBMS, znany z silnego wsparcia dla różnych typów danych i transakcyjności.
 
@@ -39,8 +20,27 @@ PostgreSQL to zaawansowany system RDBMS, znany z silnego wsparcia dla różnych 
 
 	- Silne wsparcie dla replikacji strumieniowej i klastrów wysokiej dostępności (HA).
 
+MySQL
+^^^^^
+
+MySQL jest obecnie jedną z najpopularniejszych relacyjnych baz danych, szeroko stosowana w aplikacjach webowych.
+
+1. Fizyczna konserwacja:
+
+	- Wymaga monitorowania plików .ibd (w przypadku silknika InnoDB), które mogą znacznie rosnąć,
+
+	- Backup danych realizowany poprzez mysqldump lub system replikacji binlogów.
+
+2. Programowa konserwacja:
+
+	- Regularne sprawdzanie indeksów (ANALYZE TABLE, OPTIMIZE TABLE),
+
+	- Używanie narzędzi typu mysqlcheck do weryfikacji i naprawy tabel,
+
+	- Konfiguracja pliku my.cnf w celu dostosowania do wymagań aplikacji.
+
 SQLite (np. LightSQL)
-~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^
 
 SQLite, używana w aplikacjach mobilnych i desktopowych, różni się znacznie od serwerowych baz danych.
 
@@ -59,7 +59,7 @@ SQLite, używana w aplikacjach mobilnych i desktopowych, różni się znacznie o
 	- Nie wymaga osobnych usług do zarządzania – działa bezpośrednio w aplikacji.
 
 Microsoft SQL Server
-~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^
 
 System korporacyjny, szeroko wykorzystywany w dużych organizacjach.
 

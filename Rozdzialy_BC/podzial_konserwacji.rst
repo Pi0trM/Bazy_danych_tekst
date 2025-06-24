@@ -1,8 +1,8 @@
 Podzial konserwacji baz danych
-------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Konserwacja fizyczna
-~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^
 
 Konserwacja fizyczna obejmuje wszystkie działania związane z infrastrukturą sprzętową i zasobami systemowymi, na których działa baza danych. Do najważniejszych elementów tej konserwacji należą:
 
@@ -17,7 +17,7 @@ Konserwacja fizyczna obejmuje wszystkie działania związane z infrastrukturą s
 - Tworzenie kopii zapasowych na nośnikach fizycznych – np. dyskach zewnętrznych czy taśmach LTO.
 
 Konserwacja programowa
-~~~~~~~~~~~~~~~~~~~~~~
+^^^^^^^^^^^^^^^^^^^^^^
 
 Konserwacja programowa odnosi się do czynności wykonywanych na poziomie oprogramowania i logiki działania systemu bazy danych. Obejmuje:
 
