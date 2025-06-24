@@ -1,6 +1,8 @@
 Różnice konserwacyjne w zależności od rodzaju bazy danych
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Autor: Bartłomiej Czyż
+
 PostgreSQL
 ^^^^^^^^^^
 

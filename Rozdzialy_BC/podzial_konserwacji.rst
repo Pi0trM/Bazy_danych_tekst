@@ -1,5 +1,7 @@
-Podzial konserwacji baz danych
+Podział konserwacji baz danych
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Autor: Bartłomiej Czyż
 
 Konserwacja fizyczna
 ^^^^^^^^^^^^^^^^^^^^

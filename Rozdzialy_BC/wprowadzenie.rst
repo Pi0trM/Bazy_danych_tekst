@@ -1,6 +1,8 @@
 Kontrola i konserwacja baz danych
 ---------------------------------
 
+Autor: Bartłomiej Czyż
+
 Wprowadzenie
 ^^^^^^^^^^^^
 
