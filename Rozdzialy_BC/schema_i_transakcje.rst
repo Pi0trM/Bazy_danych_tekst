@@ -1,6 +1,8 @@
 Schemat bazy danych - definicja i znaczenie
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+Autor: Bartłomiej Czyż
+
 Czym jest schemat bazy danych?
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -45,6 +47,8 @@ W PostgreSQL można analizować i optymalizować strukturę przy pomocy pgAdmin 
 
 Transakcje - definicja i rola w kontroli danych
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Autor: Bartłomiej Czyż
 
 Czym jest transakcja?
 ^^^^^^^^^^^^^^^^^^^^^
