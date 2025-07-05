@@ -45,6 +45,17 @@ Przykład konserwacji:
 
 W PostgreSQL można analizować i optymalizować strukturę przy pomocy pgAdmin oraz narzędzi takich jak pg_dump --schema-only.
 
+Różnice w implementacji schematu w różnych systemach
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- MySQL - obsługuje wiele schematów w jednej bazie; ograniczone typy kolumn w starszych wersjach,
+
+- PostgreSQL - bardzo elastyczny system schematów - możliwość teorzenia przestrzeni nazw,
+
+- SQLite - pojedynczy schemat, uproszczony system typów,
+
+- SQL Server - schemat jako logiczna przestrzeń obiektów, np. dbo, hr, finance.
+
 Transakcje - definicja i rola w kontroli danych
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -60,13 +71,13 @@ Zasady ACID
 
 Transakcje w bazach danych opierają się na czterech podstawowych zasadach, znanych jako ACID:
 
-- A - Atomicity (Atomowość) - Operacje wchodzące w skład transakcji są niepodzielne - wszystkie muszą się powieść, lub wszystkie są wycofywane,
+- A - Atomicity (Atomowość) - operacje wchodzące w skład transakcji są niepodzielne - wszystkie muszą się powieść, lub wszystkie są wycofywane,
 
-- C - Consistency (Spójność) - Transakcje przekształcają dane ze stanu spójnego w stan spójny,
+- C - Consistency (Spójność) - transakcje przekształcają dane ze stanu spójnego w stan spójny,
 
-- I - Isolation (Izolacja) - Równoczesne transakcje nie wpływają na siebie nawzajem,
+- I - Isolation (Izolacja) - równoczesne transakcje nie wpływają na siebie nawzajem,
 
-- D - Durability (Trwałość) - Po zatwierdzeniu transakcji dane są trwale zapisane, nawet w przypadku awarii.
+- D - Durability (Trwałość) - po zatwierdzeniu transakcji dane są trwale zapisane, nawet w przypadku awarii.
 
 Rola transakcji w kontroli i konserwacji
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -82,3 +93,14 @@ Transakcje mają ogromne znaczenie dla bezpieczeństwa danych, dlatego są nieod
 - Tworzenie backupów spójnych z punktu w czasie - snapshoty danych często wymagają wsparcia transakcyjnego,
 
 - Ochrona przed uszkodzeniami logicznymi - np. przez niekompletne aktualizacje.
+
+Różnice w implementacji transakcji w różnych systemach
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+- MySQL - w pełni wspierane w silniku InnoDB; START TRANSACTION, COMMIT, ROLLBACK,
+
+- PostgreSQL - silne wsparcie ACID, zaawansowana izolacja (REPEATABLE READ, SERIALIZABLE),
+
+- SQLite - transakcje działają w trybie plikowym; BEGIN, COMMIT i ROLLBACK są wspierane,
+
+- SQL Server - zaawansowany mechanizm transakcji z kontrolą poziomów izolacji, także eksplicytny SAVEPOINT.
