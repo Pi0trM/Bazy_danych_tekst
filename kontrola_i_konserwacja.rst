@@ -408,8 +408,8 @@ Różnice w implementacji schematu w różnych systemach
 
 - SQL Server - schemat jako logiczna przestrzeń obiektów, np. dbo, hr, finance.
 
-Transakcje - definicja i rola w kontroli danych
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Transakcje
+~~~~~~~~~~
 
 Autor: Bartłomiej Czyż
 
